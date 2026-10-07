@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated
+data/cache/
+logs/
+reports/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+db/*.db
+db/*.db-*
+
+# OS
+.DS_Store
+Thumbs.db

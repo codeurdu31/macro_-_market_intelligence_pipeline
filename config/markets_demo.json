@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "observations": 780,
+  "as_of": "2025-12-26T22:00:00Z",
+  "benchmark": "SX5E_EUR",
+  "strategy": {
+    "name": "vol_target",
+    "universe": [
+      "SX5E_EUR"
+    ],
+    "lookback": 20,
+    "top_n": 1,
+    "target_vol": 0.1,
+    "vol_floor": 0.01,
+    "leverage_cap": 1.5
+  },
+  "backtest": {
+    "rebalance": "monthly",
+    "execution_lag": 1,
+    "cost_bps": 5.0,
+    "leverage_cap": 1.5,
+    "funding_spread": 0.005,
+    "initial_index": 100.0
+  }
+}

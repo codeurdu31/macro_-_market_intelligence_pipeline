@@ -1,0 +1,11 @@
+{
+  "portfolio_id": "BASKET_MODERATE",
+  "equity_usd": 50000,
+  "max_leverage": 3.0,
+  "max_drawdown": 0.12,
+  "positions": [
+    {"pair": "EURUSD", "direction": "long",  "notional_usd": 60000},
+    {"pair": "USDJPY", "direction": "short", "notional_usd": 30000},
+    {"pair": "GBPUSD", "direction": "long",  "notional_usd": 20000}
+  ]
+}

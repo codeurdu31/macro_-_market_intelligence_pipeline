@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macro-market-intelligence-pipeline"
+version = "0.2.0"
+description = "Official macro releases, market expectations and FX risk in one auditable Python pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2,<3", "pandas>=2.2,<4", "matplotlib>=3.9,<4", "pydantic>=2.10,<3", "httpx>=0.28,<1", "feedparser>=6,<7", "python-dotenv>=1,<2"]
+
+[project.optional-dependencies]
+llm = ["openai>=2,<3"]
+dev = ["pytest>=8,<10", "ruff>=0.14,<1"]
+
+[tool.setuptools.packages.find]
+include = ["src*", "scripts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

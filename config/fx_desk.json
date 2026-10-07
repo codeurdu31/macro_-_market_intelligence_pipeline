@@ -1,0 +1,8 @@
+{
+  "articles_per_feed": 2,
+  "max_age_days": 30,
+  "max_llm_calls": 3,
+  "alert_max_age_days": 7,
+  "exposure_threshold_usd": 20000,
+  "upcoming_hours": 168
+}
